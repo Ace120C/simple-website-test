@@ -1,0 +1,29 @@
+@use 'sass/_variables' as *;
+
+h1 {
+  font-family: $font;
+  color: red; 
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  margin: 0 auto;
+}
+
+ul {
+  color: white;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+a {
+  font-family: $font;
+  color: red;
+}
+
+
+
+
+
+
