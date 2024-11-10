@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-top: 400px;
+  padding-right: 700px;
+  color: white;
+  text-align: right;
+}
+
+table {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-top: 500px;
+  margin-right: 600px;
+  color: white;
+  font-size: 20px;
+  border: 5px solid white;
+  border-collapse: collapse;
+}
+
+td {
+  color: white;
+  border: 3px solid white;
+}
