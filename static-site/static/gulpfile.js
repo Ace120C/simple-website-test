@@ -8,7 +8,7 @@ function buildStyles() {
 }
 
 function watchTask() {
- watch(['index.scss'], buildStyles) 
+ watch(['*.scss'], buildStyles) 
 }
 
 
