@@ -1,7 +1,13 @@
-div {
+.div-layout, div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.position-absolute-layout, h1, table {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 body {
@@ -9,9 +15,6 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   padding-top: 400px;
   padding-right: 700px;
   color: white;
@@ -19,9 +22,6 @@ h1 {
 }
 
 table {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   margin-top: 500px;
   margin-right: 600px;
   color: white;
