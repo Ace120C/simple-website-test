@@ -1,11 +1,11 @@
-@use 'sass/classes';
+@use 'classes';
 
 div {
   @extend .div-layout;
 }
 
 body {
-  background-color: black;
+  background-color: black
 }
 
 h1 {
@@ -19,9 +19,9 @@ h1 {
 table {
   @extend .position-absolute-layout;
   @extend .table-layout;
- }
+  }
 
+  td {
+    @extend .table-data-layout;
+  }
 
-td {
-  @extend .table-data-layout;
-}
