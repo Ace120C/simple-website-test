@@ -1,7 +1,7 @@
+@use 'sass/classes';
+
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend .div-layout;
 }
 
 body {
@@ -9,9 +9,7 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  @extend .position-absolute-layout;
   padding-top: 400px;
   padding-right: 700px;
   color: white;
@@ -19,9 +17,7 @@ h1 {
 }
 
 table {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  @extend .position-absolute-layout;
   margin-top: 500px;
   margin-right: 600px;
   color: white;
