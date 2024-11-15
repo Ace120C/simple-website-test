@@ -1,0 +1,42 @@
+.div-layout, div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-absolute-layout, h1, table {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.table-layout, table {
+  margin-top: 500px;
+  margin-right: 600px;
+  color: white;
+  font-size: 20px;
+  border: 5px solid white;
+  border-collapse: collapse;
+}
+
+.table-data-layout, td {
+  color: white;
+  border: 3px solid white;
+}
+
+body {
+  background-color: black;
+}
+
+h2 {
+  font-size: 75px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  padding-top: 400px;
+  padding-right: 700px;
+  color: white;
+  text-align: right;
+}
