@@ -1,5 +1,5 @@
 @use 'sass/_variables' as *;
-
+@use 'sass/classes';
 h1 {
   font-family: $font;
   color: red; 
@@ -15,12 +15,23 @@ ul {
   color: white;
   font-size: 20px;
   padding-left: 100px;
+  list-style-type: none;
 }
 
 a {
   font-family: $font;
   color: red;
 }
+
+img {
+  width: auto;
+  height: 100px;
+}
+#GR86 {
+  @extend .button;
+}
+
+
 
 
 

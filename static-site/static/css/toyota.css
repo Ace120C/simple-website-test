@@ -1,3 +1,86 @@
+/* Button Colors */
+.div-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-absolute-layout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.table-layout {
+  margin-top: 500px;
+  margin-right: 600px;
+  color: white;
+  font-size: 20px;
+  border: 5px solid white;
+  border-collapse: collapse;
+}
+
+.table-data-layout {
+  color: white;
+  border: 3px solid white;
+}
+
+/* button */
+/* glow */
+@keyframes button-glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* hover */
+.button, #GR86 {
+  margin: 100px;
+  padding: 15px 40px;
+  border: 1px solid white;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.button::after, #GR86::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.button::before, #GR86::before {
+  content: "";
+  background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+.button:hover::before, #GR86:hover::before {
+  opacity: 1;
+}
+
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: red;
@@ -13,9 +96,15 @@ ul {
   color: white;
   font-size: 20px;
   padding-left: 100px;
+  list-style-type: none;
 }
 
 a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: red;
+}
+
+img {
+  width: auto;
+  height: 100px;
 }
