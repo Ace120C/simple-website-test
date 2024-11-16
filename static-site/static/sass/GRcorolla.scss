@@ -1,0 +1,27 @@
+@use 'sass/classes';
+
+div {
+  @extend .div-layout;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  @extend .position-absolute-layout;
+  padding-top: 400px;
+  padding-right: 700px;
+  color: white;
+  text-align: right;
+}
+
+table {
+  @extend .position-absolute-layout;
+  @extend .table-layout;
+ }
+
+
+td {
+  @extend .table-data-layout;
+}
