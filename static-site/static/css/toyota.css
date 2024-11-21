@@ -25,7 +25,7 @@
   border: 3px solid white;
 }
 
-.button, #GR86 {
+.button, #GR86, #Supra, #GRyaris {
   margin: 100px;
   padding: 15px 40px;
   border: none;
@@ -37,7 +37,7 @@
   border-radius: 12px;
   /* glow */
 }
-.button::after, #GR86::after {
+.button::after, #GR86::after, #Supra::after, #GRyaris::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -48,7 +48,7 @@
   top: 0;
   border-radius: 10px;
 }
-.button::before, #GR86::before {
+.button::before, #GR86::before, #Supra::before, #GRyaris::before {
   content: "";
   background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
   position: absolute;
@@ -64,10 +64,10 @@
   border-radius: 10px;
   opacity: 0;
 }
-.button:hover::before, #GR86:hover::before {
+.button:hover::before, #GR86:hover::before, #Supra:hover::before, #GRyaris:hover::before {
   opacity: 1;
 }
-.button:active, #GR86:active {
+.button:active, #GR86:active, #Supra:active, #GRyaris:active {
   color: #000;
   font-weight: bold;
 }
